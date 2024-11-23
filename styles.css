@@ -1,0 +1,152 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Clean white background */
+    color: #333333; /* Modern dark gray text */
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+.subtext {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.timeline-container {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.timeline-title {
+    font-size: 2rem;
+    color: #495057;
+    margin-bottom: 2rem;
+}
+
+/* Timeline Design */
+.timeline {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #dee2e6;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.timeline-item {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    z-index: 2;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item h3 {
+    font-size: 1.4rem;
+    color: #343a40;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.timeline-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: #f8d7da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    color: #6c757d;
+}
+.author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #495057;
+}
+
+.bibliography {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bibliography h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.bibliography ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bibliography li {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #495057;
+    line-height: 1.5;
+}
+
