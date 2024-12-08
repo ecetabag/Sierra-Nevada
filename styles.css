@@ -39,39 +39,25 @@ body {
 /* Timeline Design */
 .timeline {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    position: relative;
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 1rem 0;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: #dee2e6;
-    transform: translateY(-50%);
-    z-index: 1;
+    flex-direction: column; /* Updated for better mobile display */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .timeline-item {
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 500px; /* Ensures buttons don't get too wide */
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     text-align: center;
-    z-index: 2;
-    width: 250px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,19 +78,49 @@ body {
 }
 
 .icon-circle {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     margin: 0 auto 1rem;
     border-radius: 50%;
     background: #f8d7da;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.icon-circle:hover {
+    background-color: #f5c2c7;
 }
 
 .icon-circle img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    .timeline-item {
+        width: 95%; /* Adjusts to screen size */
+    }
+
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-circle img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-item p {
+        font-size: 0.9rem;
+    }
 }
 
 /* Footer */
@@ -114,6 +130,7 @@ body {
     background: #f8f9fa;
     color: #6c757d;
 }
+
 .author {
     font-size: 1.2rem;
     font-weight: bold;
@@ -149,4 +166,3 @@ body {
     color: #495057;
     line-height: 1.5;
 }
-
