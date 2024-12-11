@@ -3,18 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Present - Wildfire Mitigation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Modern Practices - Wildfire Mitigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .header {
+            background-color: #FF7F50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .timeline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #FF4500;
+            z-index: 0;
+        }
+
+        .timeline button {
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+            z-index: 1;
+            margin: 0 20px;
+        }
+
+        .timeline button:hover {
+            background-color: #FF4500;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .back-button:hover {
+            background-color: #FF4500;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #FF6347;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #FF7F50;
+            color: white;
+            position: relative; width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-        <h1>Present - Wildfire Mitigation</h1>
+        <button class="back-button" onclick="location.href='index.html'">Back</button>
+        <h1 style="color: white;">Modern Strategies - Wildfire Mitigation</h1>
+        <div class="timeline">
+            <button onclick="location.href='past.html'">Historical Strategies</button>
+            <button onclick="location.href='present.html'">Modern Strategies</button>
+            <button onclick="location.href='future.html'">Future Challenges</button>
+        </div>
     </header>
-    <main>
-        <p>Learn about controlled burns, mechanical thinning, and other wildfire mitigation strategies currently in use in the Sierra Nevada.</p>
-    </main>
-    <footer class="footer">
-        <p>© 2024 Forest Management and Wildfire Control. All Rights Reserved.</p>
+
+    <div class="content">
+        <h2>Modern Strategies for Wildfire Mitigation in the Sierra Nevada</h2>
+        <p>Wildfires have become an increasingly pressing concern in the Sierra Nevada region, driven by climate change, forest management practices, and urban development. Wildfires threaten ecosystems and communities, so contemporary strategies for wildfire mitigation are essential to protect natural resources and enhance community resilience. This page explores modern approaches to wildfire mitigation, emphasizing controlled burns, mechanical thinning, forest restoration, and community engagement.</p>
+
+        <h3>Controlled Burns</h3>
+        <p>Controlled burns are proving to be a game-changer in the fight against wildfires. By setting small, carefully managed fires, this method mimics nature's way of keeping forests healthy. These burns clear out the undergrowth and dead wood that can turn a small fire into an inferno. For instance, Yosemite and Sequoia National Parks have used controlled burns for decades with notable benefits. Wildfires in treated areas are often less severe, helping fire-loving plants thrive and restoring ecological balance.</p>
+
+        <p>Fire managers carefully wait for the right conditions—not too wet, not too dry, and not overly windy—to conduct these burns. This approach builds healthier, more resilient forests that can better withstand the threat of major wildfires. Controlled burns reduce the risk of catastrophic fires and restore balance to forest ecosystems.</p>
+
+        <h3>Mechanical Thinning</h3>
+        <p>Mechanical thinning involves cutting down smaller trees and clearing thick undergrowth to lessen the amount of fuel available for fires. This process is especially effective in areas where controlled burns may not be feasible, such as near communities or in adverse weather conditions. However, mechanical thinning faces challenges like high costs and a lack of infrastructure for processing the resulting woody biomass.</p>
+
+        <p>Collaboration with local businesses and investments in processing facilities can help address these challenges. Developing a market for woody biomass can provide economic benefits to communities while reducing fire risks. Mechanical thinning isn’t just about cutting trees; it’s about creating a sustainable system that keeps forests healthy and communities safe.</p>
+
+        <h3>Forest Restoration</h3>
+        <p>Forest restoration focuses on reintroducing indigenous species and reducing the dominance of fire-sensitive trees. This strategy is vital for rehabilitating ecosystems altered by past fire suppression practices or invasive species. Techniques such as planting native species and removing invasive plants enhance biodiversity and improve forest health.</p>
+
+        <p>By restoring historical ecosystems that are naturally resilient to fire, land managers can promote sustainable forest management. These efforts contribute to the long-term health of forests and foster better ecological relationships within the community.</p>
+
+        <h3>Community Engagement</h3>
+        <p>Community engagement plays a crucial role in wildfire mitigation. Educating residents about fire safety and building partnerships between local governments and citizens can make a significant difference. Teaching people to create defensible spaces around their homes and use fire-resistant landscaping helps reduce fire risks.</p>
+
+        <p>When communities actively participate in land management decisions, they feel more invested in preventing wildfires. Grassroots efforts, such as volunteer programs for trail clearing or replanting after fires, strengthen both forest and community resilience.</p>
+
+        <h3>Conclusion</h3>
+        <p>Modern strategies for wildfire mitigation in the Sierra Nevada encompass a multifaceted approach that integrates ecological restoration with community involvement. Controlled burns and mechanical thinning reduce fuel loads and improve forest health, while forest restoration enhances ecosystem resilience. Community engagement fosters awareness and collaboration, making these strategies more effective in mitigating wildfire risks.</p>
+    </div>
+
+    <footer>
+       <p>&copy; 2024 Forest Management and Wildfire Control. By: Albert Ponferrada</p>
     </footer>
 </body>
 </html>
