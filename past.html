@@ -3,101 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Past - Forest Management</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Past - Historical Practices</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f5efe6;
-            color: #4b3832;
+            background-color: #f9f9f9;
+            color: #333;
         }
+
         .header {
-            background: #8e6e53;
-            color: #fff;
-            padding: 20px 0;
+            background-color: #006400;
+            color: white;
+            padding: 20px;
             text-align: center;
+            position: relative;
         }
-        main {
+
+        .timeline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #228B22;
+            z-index: 0;
+        }
+
+        .timeline button {
+            background-color: #228B22;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            position: relative;
+            z-index: 1;
+            margin: 0 20px;
+        }
+
+        .timeline button:hover {
+            background-color: #b5d3b5;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: #228B22;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .back-button:hover {
+            background-color: #b5d3b5;
+        }
+
+        .content {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        section {
-            margin-bottom: 40px;
+
+        h1, h2 {
+            color: #006400;
         }
-        section h2 {
-            color: #8e6e53;
+
+        .info-box {
+            background-color: #e0f2e0;
+            border: none;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
         }
+
         footer {
             text-align: center;
-            padding: 10px 0;
-            background: #dac3b3;
-            margin-top: 40px;
-        }
-        .image-placeholder {
+            padding: 10px;
+            background-color: #006400;
+            color: white;
+            position: relative;
             width: 100%;
-            height: 200px;
-            background-color: #e0d2c1;
-            margin: 20px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-            color: #6d5545;
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Past - Forest Management</h1>
+     <header class="header">
+        <button class="back-button" onclick="location.href='index.html'">Back</button>
+        <h1 style="color: white;">Historical Strategies - Wildfire Mitigation</h1>
+        <div class="timeline">
+            <button onclick="location.href='past.html'">Historical Strategies</button>
+            <button onclick="location.href='present.html'">Modern Strategies</button>
+            <button onclick="location.href='future.html'">Future Challenges</button>
+        </div>
     </header>
-    <main>
-        <p>This article explores the influence of historical forest management practices on the present condition of the Sierra Nevada's forests.</p>
-        <section>
-            <h2>Historical Practices and Their Consequences in Sierra Nevada's Forest Management</h2>
-           <img src="s1.png" alt="Historical Forest Image" style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
 
-            <p>Over the last hundred years, human activities have dramatically reshaped the forests of the Sierra Nevada, affecting their composition, resilience, and ecological balance. Fire suppression, unsustainable logging, and the abandonment of traditional Indigenous fire management practices have made these forests more prone to wildfires, biodiversity loss, and the effects of climate change. Addressing these challenges requires a renewed commitment to sustainable forest management.</p>
-        </section>
-        <section>
-            <h2>Fire Suppression and Its Legacy</h2>
-            <div class="image-placeholder">Image Placeholder</div>
-            <p>The "10 a.m. Policy" introduced in 1935, which aimed to extinguish all fires by 10 a.m. the day after detection, marked the beginning of widespread fire suppression efforts in the Sierra Nevada. These forests, historically maintained by frequent low-intensity fires, have since accumulated dense undergrowth and high fuel loads, leading to larger and more destructive wildfires. Recent megafires illustrate the unintended consequences of these policies, with widespread ecological and economic costs.</p>
-            <p>Severe wildfires destroy critical seed sources, degrade soils, and fragment habitats, making forest recovery increasingly difficult. Studies have shown that these intense fires disrupt ecological networks, reducing their complexity and ability to recover.</p>
-        </section>
-        <section>
-            <h2>Logging Practices and Species Composition</h2>
-            <div class="image-placeholder">Image Placeholder</div>
-            <p>During the early 20th century, extensive logging targeted large, fire-resistant trees like Ponderosa pines. This selective removal left forests dominated by less fire-tolerant species such as firs and cedars, which are more vulnerable to fires due to their dense canopies and resinous properties. These changes in species composition have significantly increased fire risks.</p>
-            <p>Additionally, logging practices created overly uniform forest structures with reduced biodiversity. Combined with fire suppression, these practices have weakened forests, making them more susceptible to pests and drought. Bark beetle infestations, for instance, have caused extensive damage to already stressed tree populations.</p>
-        </section>
-        <section>
-            <h2>Suppression of Indigenous Fire Management</h2>
-             <img src="s2.png" alt="Historical Forest Image" style="width: 100%; height: auto; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    <div class="content">
+        <h2>Historical Practices and Their Consequences in Sierra Nevada's Forest Management</h2>
+        <p>The Sierra Nevada’s forests have undergone profound transformations over the last century due to human intervention, significantly altering their structure, resilience, and ecological health. Historical practices such as fire suppression, intensive logging, and the suppression of Indigenous fire management methods have made forests highly vulnerable to catastrophic wildfires, biodiversity loss, and climate change effects. These issues highlight the urgent need to reassess and integrate sustainable management practices.</p>
 
-            <p>Indigenous peoples in the Sierra Nevada practiced controlled burns for centuries, promoting ecological health and reducing wildfire risks. These cultural burns maintained diverse plant and animal communities and minimized the buildup of flammable materials. However, colonial policies suppressed these practices, removing a vital tool for forest management.</p>
-            <p>Today, there is growing recognition of the importance of reintegrating Indigenous fire stewardship into modern management strategies. These practices offer valuable insights into maintaining ecological balance and fostering resilience against wildfires.</p>
-        </section>
-        <section>
-            <h2>Pathways to Resilience</h2>
-            <div class="image-placeholder">Image Placeholder</div>
-            <p>To address these challenges, forest management must adopt a more holistic and proactive approach. Strategies like mechanical thinning, prescribed burns, and the revival of Indigenous fire practices have shown promise in reducing fire risks and promoting ecosystem health. For example, combining thinning and prescribed burns has been effective in lowering fuel loads and enhancing species diversity.</p>
-            <p>Collaboration between state and federal agencies, increased funding for prescribed burn programs, and public education about fire-resilient forests are essential steps forward. Integrating traditional knowledge with modern science can create a sustainable path for restoring the Sierra Nevada’s forests.</p>
-        </section>
-        <section>
-            <h2>Conclusion</h2>
-            <div class="image-placeholder">Image Placeholder</div>
-            <p>The historical impacts of fire suppression, logging, and the neglect of Indigenous practices have left the Sierra Nevada’s forests in a fragile state. However, by learning from past mistakes and fostering innovative and collaborative management approaches, it is possible to restore these forests to a healthier and more resilient state. This work is vital for ensuring that future generations can benefit from the ecological, cultural, and economic value of these iconic landscapes.</p>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>© 2024 Forest Management and Wildfire Control. All Rights Reserved.</p>
+        <h3>Historical Fire Regimes</h3>
+        <p>Before the European settlement occurred, Native Americans managed the Sierra Nevada forests with controlled burns. Combined with natural fires caused by lightning, these practices resulted in a landscape of large, well-spaced trees with minimal undergrowth. During this period, fires burned about 4.5 times more area than today, according to a research paper published by PennState.</p>
+
+        <h3>The Era of Fire Suppression</h3>
+        <p>The U.S. Forest Service's aggressive fire suppression campaign, symbolized by Smokey Bear, effectively eliminated fire from the forests. This policy, coupled with selective logging of large trees, intense grazing, and road building, reshaped forest structure throughout the Sierra Nevada.</p>
+
+        <h3>Consequences of Fire Exclusion</h3>
+        <ul>
+            <li>Overgrown forests with dense understory</li>
+            <li>Accumulation of excessive fuel loads</li>
+            <li>Shift in species composition</li>
+        </ul>
+        <p>These changes have set the stage for more severe and destructive wildfires. The forests once dubbed "asbestos forests" due to their perceived inability to sustain large conflagrations are now prone to catastrophic fires.</p>
+
+        <div class="info-box">
+            <h4>How did the "10 a.m. Policy" alter fire patterns in the Sierra Nevada?</h4>
+            <ul>
+                <li><strong>Fuel Accumulation:</strong> The policy led to a substantial buildup of dead wood and brush, since regular fires that would clear these fuels were suppressed.</li>
+                <li><strong>Changes in Forest Structure:</strong> Fire-dependent species diminished, resulting in dense stands of trees often uniform in age and size rather than the diverse ecosystems that once thrived.</li>
+                <li><strong>Increased Fire Severity:</strong> When fires occur, they tend to be much more intense and harder to control, leading to the emergence of "mega fires" that far exceed historical fire patterns.</li>
+                <li><strong>Ecological Imbalance:</strong> The absence of fire disrupted natural processes, negatively impacting species that rely on fire for regeneration and altering wildlife habitats.</li>
+                <li><strong>Long-term Fire Risk:</strong> The suppression of fires has eventually increased the risk of catastrophic wildfires, since overgrown forests are now more susceptible to severe burning.</li>
+                <li><strong>Challenges for Management:</strong> Forest managers are now working to reintroduce fire into the ecosystem through controlled burns and other methods, aiming to restore balance while protecting communities.</li>
+            </ul>
+        </div>
+
+        <h3>Logging Practices and Species Composition</h3>
+        <p>The logging boom of the early 20th century significantly contributed to the degradation of forests in the Sierra Nevada, with lasting consequences that are still evident today. Loggers primarily focused on removing large, fire-resistant trees such as Ponderosa pines. This selective logging practice disrupted the natural balance of the forest ecosystem. There was a shift in species composition, where the removal of these resilient trees allowed smaller, less fire-tolerant species to proliferate.</p>
+
+        <p>As a result, the forests became dominated by shade-tolerant species like firs and cedars, which are more susceptible to fire due to their dense canopies and resinous foliage. Intensive logging practices led to homogenized forest stands with reduced structural diversity. This lack of variety diminishes the forests' resilience to environmental stressors like drought and pest infestations. Weakened tree populations have also become increasingly vulnerable to bark beetle infestations, resulting in devastation in many areas in the Sierra Nevada. This situation has been exacerbated by years of fire suppression and the ongoing effects of climate change.</p>
+
+        <h3>Suppression of Indigenous Fire Management</h3>
+        <p>Native Americans, including the Washoe, Miwok, and Mono tribes, utilized fire to manage the Sierra Nevada's forests before European arrival. Cultural burning included precisely planning low-intensity burns to decrease underbrush, increase food plants like acorns and berries, and provide diversified animal habitats. This method maintained open forests with huge, fire-resistant trees and ecological equilibrium. European invaders interrupted this structure, resulting in cultural burning bans. Forests overgrew, biodiversity declined, and catastrophic wildfires intensified. Many increasingly see the necessity to incorporate Indigenous knowledge into contemporary forest management. The Sierra-Sequoia Burn Cooperative teaches tribal people prescribed burning practices, and Yosemite National Park organizes cultural fires with them.</p>
+
+        <h3>Pathways to Resilience</h3>
+        <p>Modern forest management must learn from past mistakes to address current challenges effectively. Strategies such as mechanical thinning, prescribed burns, and the revival of Indigenous practices have shown promise, which is explained more in the “Modern Strategies for Wildfire Mitigation in the Sierra Nevada” post.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Forest Management and Wildfire Control. By: Albert Ponferrada</p>
     </footer>
 </body>
 </html>
